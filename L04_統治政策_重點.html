@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"L04 &#x6e05;&#x5e1d;&#x570b;&#x7d71;&#x6cbb;&#x653f;&#x7b56;&#x7684;&#x8b8a;&#x9077;","children":[{"content":"Who&#xff08;&#x8ab0;&#xff09;","children":[{"content":"&#x6e05;&#x5e1d;&#x570b;&#xff08;&#x4e2d;&#x592e;&#x653f;&#x5e9c;&#xff09;","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"&#x5730;&#x65b9;&#x5b98;&#x54e1;","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"&#x81fa;&#x7063;&#x4eba;&#x6c11;&#xff08;&#x6f22;&#x4eba;&#x3001;&#x539f;&#x4f4f;&#x6c11;&#xff09;","children":[],"payload":{"tag":"li","lines":"13,15"}}],"payload":{"tag":"h2","lines":"10,11"}},{"content":"What&#xff08;&#x4ec0;&#x9ebc;&#xff09;","children":[{"content":"&#x7d71;&#x6cbb;&#x653f;&#x7b56;","children":[{"content":"&#x8a2d;&#x7f6e;&#x81fa;&#x7063;&#x5e9c;&#xff0c;&#x5be6;&#x65bd;&#x5b98;&#x5236;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"&#x5283;&#x5206;&#x719f;&#x756a;&#x3001;&#x751f;&#x756a;&#x5340;","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"&#x5be6;&#x65bd;&#x7406;&#x756a;&#x653f;&#x7b56;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"&#x9650;&#x5236;&#x79fb;&#x6c11;&#x8207;&#x65cf;&#x7fa4;&#x901a;&#x5a5a;&#xff08;&#x6e21;&#x81fa;&#x7981;&#x4ee4;&#xff09;","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"17,18"}},{"content":"&#x793e;&#x6703;&#x7ba1;&#x63a7;","children":[{"content":"&#x8a2d;&#x4fdd;&#x7532;&#x5236;&#x5ea6;&#xff08;&#x9632;&#x7bc4;&#x6c11;&#x8b8a;&#xff09;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"&#x5be6;&#x65bd;&#x7ce7;&#x518a;&#x3001;&#x4e01;&#x518a;&#x8abf;&#x67e5;","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"23,24"}}],"payload":{"tag":"h2","lines":"15,16"}},{"content":"When&#xff08;&#x4f55;&#x6642;&#xff09;","children":[{"content":"1683&#xff08;&#x6e05;&#x9818;&#x958b;&#x59cb;&#xff09;","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"18&#x4e16;&#x7d00;&#xff5e;19&#x4e16;&#x7d00;&#x4e2d;&#x8449;&#xff08;&#x653f;&#x7b56;&#x9010;&#x6f38;&#x8abf;&#x6574;&#xff09;","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"Where&#xff08;&#x54ea;&#x88e1;&#xff09;","children":[{"content":"&#x5168;&#x81fa;&#x7063;&#xff08;&#x542b;&#x81fa;&#x7063;&#x5e9c;&#x3001;&#x8af8;&#x7f85;&#x3001;&#x9cf3;&#x5c71;&#x7b49;&#x5730;&#xff09;","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"&#x6f22;&#x4eba;&#x805a;&#x843d;&#x3001;&#x539f;&#x4f4f;&#x6c11;&#x90e8;&#x843d;&#x3001;&#x5c71;&#x5340;&#x908a;&#x754c;","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h2","lines":"31,32"}},{"content":"Why&#xff08;&#x70ba;&#x4ec0;&#x9ebc;&#xff09;","children":[{"content":"&#x978f;&#x56fa;&#x653f;&#x6b0a;&#x3001;&#x7dad;&#x6301;&#x793e;&#x6703;&#x5b89;&#x5b9a;","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"&#x7ba1;&#x7406;&#x79fb;&#x6c11;&#x3001;&#x9810;&#x9632;&#x65cf;&#x7fa4;&#x885d;&#x7a81;","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"&#x63a7;&#x5236;&#x908a;&#x7586;&#x8207;&#x539f;&#x4f4f;&#x6c11;&#x5730;&#x5340;","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h2","lines":"35,36"}},{"content":"How&#xff08;&#x600e;&#x9ebc;&#x505a;&#xff09;","children":[{"content":"&#x884c;&#x653f;&#x63aa;&#x65bd;","children":[{"content":"&#x8a2d;&#x5e9c;&#x7e23;&#x9ad4;&#x7cfb;&#x7ba1;&#x7406;&#x81fa;&#x7063;","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"&#x5f37;&#x5316;&#x5de1;&#x5bdf;&#x8207;&#x8ecd;&#x4e8b;&#x90e8;&#x7f72;","children":[],"payload":{"tag":"li","lines":"44,46"}}],"payload":{"tag":"h3","lines":"42,43"}},{"content":"&#x793e;&#x6703;&#x7ba1;&#x7406;","children":[{"content":"&#x4fdd;&#x7532;&#x5236;&#x5ea6;&#x76e3;&#x63a7;&#x6c11;&#x9593;&#x6d3b;&#x52d5;","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"&#x5ba3;&#x5c0e;&#x5112;&#x5bb6;&#x502b;&#x7406;&#xff0c;&#x5f37;&#x5316;&#x601d;&#x60f3;&#x63a7;&#x5236;","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"h3","lines":"46,47"}},{"content":"&#x539f;&#x4f4f;&#x6c11;&#x653f;&#x7b56;","children":[{"content":"&#x8a2d;&#x7406;&#x756a;&#x540c;&#x77e5;&#xff0c;&#x9032;&#x884c;&#x62db;&#x64ab;&#x8207;&#x9694;&#x96e2;","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"&#x7981;&#x6b62;&#x9032;&#x5165;&#x751f;&#x756a;&#x5340;&#x8207;&#x901a;&#x5a5a;","children":[],"payload":{"tag":"li","lines":"52,53"}}],"payload":{"tag":"h3","lines":"50,51"}}],"payload":{"tag":"h2","lines":"40,41"}}],"payload":{"tag":"h1","lines":"8,9"}},{"color":["blue"],"initialExpandLevel":2})</script>
+</body>
+</html>
